@@ -41,7 +41,7 @@ public class awajaba extends Application {
         Label Note= new Label("Note :");
        
 
-       
+        // On établi la valeur de chaque bouton
         RadioButton note0 = new RadioButton("0\t");
        
         note0.setUserData(0);
@@ -68,6 +68,7 @@ public class awajaba extends Application {
         note5.setUserData(5);
        
         
+        //on change l'état des autres boutons dès lors qu'on en presse un
         if(note1.isSelected()==true){
             
             note0.setSelected(true);
@@ -153,7 +154,7 @@ public class awajaba extends Application {
         });
         Valider.setOnAction(new EventHandler<ActionEvent>() {
            
-           
+           //On compare l'etat d'un bouton avec celui de la note superieur afin de connaitre sa valeur
             @Override
             public void handle(ActionEvent event) {
                 if (note0.isSelected()==true && note1.isSelected()==false){
@@ -161,7 +162,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(0,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                    
@@ -171,7 +172,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(1,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                 }
@@ -180,7 +181,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(2,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                 }
@@ -189,7 +190,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(3,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                 }
@@ -198,7 +199,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(4,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                 }
@@ -207,7 +208,7 @@ public class awajaba extends Application {
                     EvaluationHote unHote= new EvaluationHote(5,textAreaCom.getText());
                     Alert dlgNok = new Alert (Alert.AlertType.INFORMATION);
                     dlgNok.setTitle("Comfirmation");
-                    dlgNok.setHeaderText("Vous avez bien evalué votre repas");
+                    dlgNok.setHeaderText("Votre repas a bien été évalué");
                     dlgNok.setContentText("Note:"+unHote.getNote()+" Commentaire:"+unHote.getCommentaire());
                     dlgNok.showAndWait();
                 }
